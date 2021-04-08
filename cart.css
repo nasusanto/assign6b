@@ -128,7 +128,7 @@ body{
     border: 2px solid #b06b29;
     border-radius: 30px;
     width: 500px;
-    margin-left: 24px;
+    margin-right: 24px;
 }
 
 .place-order{
@@ -191,4 +191,10 @@ body{
 
 .remove-button:hover {
     opacity: 0.7;
+}
+
+.no-cart-item{
+    color: #954901;
+    font-size: 24px;
+    margin-left: 24px;
 }

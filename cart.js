@@ -63,7 +63,7 @@ function build_cart_items() {
     document.getElementById('cart-items').innerHTML = '';
     var current_cart = get_cart();
     if (!current_cart.length) {
-        var empty_item = '<p class="no-cart-item">No items in the cart</p>';
+        var empty_item = '<p class="no-cart-item">No items in the cart! Check out our menu for some delicious buns!</p>';
         document.getElementById('cart-items').innerHTML = empty_item;
         return;
     }
