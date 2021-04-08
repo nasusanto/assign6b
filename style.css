@@ -1,0 +1,137 @@
+.menu{
+    color: #000;    
+}
+
+* {
+    font-family: "ABeeZee";
+}
+
+.navbar {
+    display: flex;
+}
+
+.links{
+    flex: 1;
+    display: flex;
+    justify-content: space-around;
+}
+
+.links a{
+    color: rgba(149,73,1,60%);
+    text-align: center;
+    font-size: 36px;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+}
+
+
+/* change color of navbar links when hovering */
+.links a:hover{
+    color: rgb(149,73,1);
+}
+
+/* header/promo */
+.header{
+    width: 100%;
+    height: 300px;
+    background: url('images/header.jpg');
+    background-size: cover;
+    background-position: 0px -450px;
+    align-items: center;
+}  
+
+.promo{
+    color: white;
+    font-size: 64px;
+    margin-left: 32px;
+    margin-top: 16px;
+}
+
+.button{
+    font-size: 36px;
+    border: 2px solid #eba15c;
+    background: #eba15c;
+    margin-left: 32px;
+    color: white;
+    text-decoration: none;
+    padding: 8px;
+}
+
+.products-list {
+    width: 100%;
+    margin-top: 16px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.product-display {
+    width: 400px;
+    margin: 30px;
+    border: 2px solid #954901;
+}
+
+.product-name{
+    text-align: center;
+    color: #954901;
+    font-size: 48px;
+    margin-top: 16px;
+    margin-bottom: 8px;
+}
+
+.product-price{
+    text-align: center;
+    color: #B06B29;
+    font-size: 36px;
+    margin-top: 16px;
+    margin-bottom: 16px;
+}
+
+.product-gf{
+    text-align: center;
+    color: #954901;
+    font-size: 38px;
+    margin-top: 16px;
+    margin-bottom: 8px;
+}
+
+.product-image {
+    display: block;
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+.logo img{
+    width: 224px;
+    height: auto;
+    display: inline-block;
+}
+
+.carticon {
+    padding: 16px;
+    position: relative;
+}
+
+.carticon img{
+    width: 75px;
+    display: block;
+    height: auto;
+}
+
+.order-link{
+    text-decoration: none;
+}
+
+.cart-icon-item-count{
+    color: #FFFFFF;
+    font-size: 18px;
+    border-radius: 50%;
+    width: 14px;
+    height: 14px;
+    padding: 8px;
+    background: #B06B29;
+    float: right;
+    transform: translateX(-50%);
+}

@@ -1,0 +1,164 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+.main{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    margin: 0 auto;
+    max-width: 1440px;
+}
+
+.cart-title{
+    flex: 1;
+    display: flex;
+    justify-content: space-around;
+    display: inline-flex;
+    align-items: center;
+}
+
+.cart-title-text {
+    color: rgba(149,73,1,60%);
+    text-align: center;
+    font-size: 48px;
+    text-decoration: none;
+}
+
+.cart-item {
+    display: flex;
+    align-items: center;
+    border: #B06B29 solid 4px;
+    border-radius: 16px;
+    padding: 16px;
+}
+
+.cart-item .cart-item-image {
+    margin-right: 16px;
+    height: 140px;
+    width: 140px;
+    object-fit: contain;
+}
+
+.cart-item .cart-item-description {
+    flex: 1;
+}
+
+.cart-item-description .product-attributes {
+    display: flex;
+}
+
+.product-attributes .product-data {
+    flex: 1;
+}
+
+.cart-item-price {
+    color: #954901;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.total-price-header {
+    font-size: 1.3rem;
+}
+
+.cart-item-price .total-price {
+    font-size: 2.5rem;
+}
+
+/* setting up the 2 dividers */
+.cart-column, .order-column{
+    position: relative;
+    padding: 8px;
+    height: 500px;
+}
+
+.cart-column{
+    border: 2px #b06b29;
+    flex: 1;
+    grid-template-columns: 25% 25% 1fr 1fr;
+    grid-template-rows: 200px 200px;
+
+}
+
+.product-glaze {
+    margin-bottom: 8px;
+}
+
+.product-data .product-data-label {
+    display: inline-block;
+    min-width: 128px;
+}
+
+
+/*cart column */
+.original-image{
+    width: 90px;
+    height: 90px;
+}
+
+.product-name{
+    color: #954901;
+    font-size: 36px;
+    text-align: left;
+}
+
+.glaze{
+    color: #954901;
+    font-size: 24px;
+}
+
+.quantity{
+    color: #954901;
+    font-size: 24px;
+}
+
+.total-price{
+    color: #954901;
+    font-size: 24px;
+}
+
+
+/* place order column */
+.order-column{
+    border: 2px solid #b06b29;
+    border-radius: 30px;
+    width: 500px;
+    margin-left: 24px;
+}
+
+.place-order{
+    font-size: 36px;
+    border: 2px solid #b06b29;
+    background: #b06b29;
+    margin-left: 0px;
+    color: white;
+    text-decoration: none;
+    padding: 16px;
+    margin-top: 16px;
+    text-align: center;
+    width: 100%;
+    cursor: pointer;
+}
+
+.summary{
+    color: #954901;
+    font-size: 36px;
+}
+
+.items-shipping{
+    color: #b06b29;
+    font-size: 24px;
+}
+
+.tax{
+    color: #b06b29;
+    font-size: 24px;
+}
+
+.order-total{
+    color: #FF0000;
+    font-size: 36px;
+}

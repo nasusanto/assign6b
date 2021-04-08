@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head> 
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="cart.css">
+        <script src="main.js"></script>
+        <!--adding/linking ABeeZee font-->
+        <link href='https://fonts.googleapis.com/css?family=ABeeZee' rel='stylesheet'>
+        <title>Cart | Bun Bun Bakeshop</title>
+    </head>
+    <body> <!--navigation bar-->
+        <header class="navbar">
+            <div class="logo"><a href="index.html"><img src="images/logo.png" alt="bun bun logo"></a>
+            </div>
+            <div class="cart-title">
+                <h1 class="cart-title-text">Cart (<span class="cart-item-count"></span> items)</h1>
+            </div>
+        </header>
+
+        
+        <main class="main">
+            <!--First column -->
+            <div class="cart-column">
+                <div class="cart-item">
+                    <img class="original-image cart-item-image" src="images/original1.jpg" alt="original bun picture">
+                    <div class="cart-item-description">
+                        <h2 class="product-name">Original Cinnamon Roll</h2>
+                        <div class="product-attributes">
+                            <div class="product-data">
+                                <div class="product-glaze">
+                                    <span class="glaze product-data-label">Glaze:</span>
+                                    <select name="glaze" id="glaze-dropdown">
+                                        <option value="">None</option>
+                                        <option value="Sugar-milk">Sugar-milk</option>
+                                        <option value="Vanilla-milk">Vanilla-milk</option>
+                                        <option value="Double chocolate">Double-chocolate</option>
+                                    </select>
+                                </div>
+                                <div class="product-quantity">
+                                    <span class="quantity product-data-label">Quantity:</span>
+                                    <select name="quantity" id="quantity-dropdown">
+                                        <option value="1">1 roll</option>
+                                        <option value="3">3 rolls</option>
+                                        <option value="6">6 rolls</option>
+                                        <option value="12">12 rolls</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="cart-item-price">
+                                <span class="total-price-header">Total: </span>
+                                <span class="total-price">$<span class="item-price">2.00</span></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--Second column for placing payment-->
+            <div class="order-column">
+                <button class="place-order">Place your order</button>
+                <h2 class="summary">Order Summary</h2>
+                <h3 class="items-shipping">Items: $12.00</h3>
+                <h3 class="items-shipping">Shipping & handling: $4.00</h3>
+                <h3 class="tax">Total before tax: $16.00</h3>
+                <h3 class="tax">Estimated tax to be collected: $1.21</h3>
+                <h2 class="order-total">Order total: $17.21</h2>
+
+            </div>
+        </main>
+

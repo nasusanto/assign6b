@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head> 
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="order.css">
+        <!--adding/linking ABeeZee font-->
+        <link href='https://fonts.googleapis.com/css?family=ABeeZee' rel='stylesheet'>
+        <script src="main.js"></script>
+        <script src="order.js"></script>
+        <title>Order | Bun Bun Bakeshop</title>
+    </head>
+    <body> <!--navigation bar-->
+        <div class="navbar">
+            <div class="logo"><a href="index.html"><img src="images/logo.png" alt="bun bun logo"></a>
+            </div>
+            <div class="links">
+                <a href="menu.html">Menu</a>
+                <a href="about.html">About</a>
+                <a href="locations.html">Locations</a>
+                <a href="contact.html">Contacts</a>
+            </div>
+        </div>
+
+        <!--Back button from order page to menu-->
+            <a class="back-button" href="menu.html">Back to Menu</a>
+
+            <div class="main">
+                <!--First column for bun images-->
+                <div class="images-column">
+                    <img class="main-original" src="images/original1.jpg" alt="original bun picture">
+                    <div class="small-images">
+                        <img class="original-small" src="images/smallorginal1.jpg" alt="another original bun picture">
+                        <img class="original-small" src="images/smalloriginal2.jpg" alt="another original bun picture">
+                        <img class="original-small" src="images/smalloriginal3.jpg" alt="another original bun picture">
+                    </div>
+                </div>
+                
+                <!--Second column with information about bun-->
+                <div class="info-column">
+                    <h1 class="name"><span class="original-name">Original Cinnamon Roll</span><span class="added-detail"></span></h1>
+                    <p class="bun-info">A common treat for many, we have reinvented the way original cinnamon rolls are made with our special ingredients and techniques.</p>
+                    <h2 class="ingredients">Ingredients</h2>
+                    <p class="ingredients-list">Milk, granulated sugar, eggs, butter, bread flour, brown sugar, cinnamon, salt, cream cheese, vanilla</p>
+                </div>
+
+                <!--Third column where user picks bun details-->
+                <div class="product-column">
+                    <h2 class="title">Price</h2>
+                    <h3 class="price" data-price="2.00">$2.00/roll</h3>
+                    <div class="quantity">
+                        <h2 class="title-quantity">Quantity</h2>
+                        <a class="button-rolls button-roll-active" data-qty="1">1 roll</a>
+                        <a class="button-rolls" data-qty="3">3 rolls</a>
+                        <a class="button-rolls" data-qty="6">6 rolls</a>
+                        <a class="button-rolls" data-qty="12">12 rolls</a>
+                    </div>
+                    <div class="glazing">
+                        <h2 class="title-glazing">Glazing</h2>
+                        <a class="glazings glazings-active" data-glazing="">None</a>
+                        <a class="glazings" data-glazing="Sugar-milk">Sugar-milk</a>
+                        <a class="glazings" data-glazing="Vanilla-milk">Vanilla-milk</a>
+                        <a class="glazings" data-glazing="Double-chocolate">Double-chocolate</a>
+                    </div>
+                    <h3 class="total" data-total="0.00">Total: $<span id="total-price"></span></h3>
+                    <button onclick="add_to_cart();" class="add-to-cart">Add to Cart</button>
+                    <div class="buy-now">
+                        <a href="cart.html" class="buy-now">Buy Now</a>
+                    </div>
+                </div>
+            </div>
+    </body>
+</html>
+            
