@@ -7,6 +7,7 @@
         <link rel="stylesheet" href="style.css">
         <link rel="stylesheet" href="cart.css">
         <script src="main.js"></script>
+        <script src="cart.js"></script>
         <!--adding/linking ABeeZee font-->
         <link href='https://fonts.googleapis.com/css?family=ABeeZee' rel='stylesheet'>
         <title>Cart | Bun Bun Bakeshop</title>
@@ -23,8 +24,9 @@
         
         <main class="main">
             <!--First column -->
-            <div class="cart-column">
-                <div class="cart-item">
+            <div id="cart-items" class="cart-column">
+                <!-- <div class="cart-item">
+                    <button class="remove-button">X</button>
                     <img class="original-image cart-item-image" src="images/original1.jpg" alt="original bun picture">
                     <div class="cart-item-description">
                         <h2 class="product-name">Original Cinnamon Roll</h2>
@@ -55,18 +57,18 @@
                             </div>
                         </div>
                     </div>
-                </div>
+                </div> -->
             </div>
 
             <!--Second column for placing payment-->
             <div class="order-column">
-                <button class="place-order">Place your order</button>
+                <button class="place-order" id="place-order-button">Place your order</button>
                 <h2 class="summary">Order Summary</h2>
-                <h3 class="items-shipping">Items: $12.00</h3>
-                <h3 class="items-shipping">Shipping & handling: $4.00</h3>
-                <h3 class="tax">Total before tax: $16.00</h3>
-                <h3 class="tax">Estimated tax to be collected: $1.21</h3>
-                <h2 class="order-total">Order total: $17.21</h2>
+                <h3 class="items-total">Items: $<span id="items-total-value">12.00</span></h3>
+                <h3 class="items-shipping">Shipping & handling: $<span id="items-shipping-value">4.00</span></h3>
+                <h3 class="subtotal">Total before tax: $<span id="subtotal-value">16.00</span></h3>
+                <h3 class="tax">Estimated tax to be collected: $<span id="tax-value">1.21</span></h3>
+                <h2 class="order-total">Order total: $<span id="order-total-value">17.21</span></h2>
 
             </div>
         </main>

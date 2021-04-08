@@ -1,6 +1,8 @@
 var selected_quantity = null;
 var glazing = null;
 var price = null;
+var product_name = null;
+var product_image = null;
 var total_price = 0;
 
 function listen_button_roll_change() {
@@ -51,6 +53,8 @@ function get_initial_data() {
     selected_quantity = document.querySelector(".button-roll-active").getAttribute("data-qty");
     glazing = document.querySelector(".glazings-active").getAttribute("data-glazing");
     price = parseFloat(document.querySelector(".price").getAttribute("data-price"));
+    product_name = document.querySelector(".original-name").innerHTML;
+    product_image = document.querySelector(".main-original").getAttribute("data-src");
 }
 
 function populate_cart_storage() {
@@ -62,9 +66,11 @@ function populate_cart_storage() {
 function save_cart_to_storage() {
     var current_cart = JSON.parse(localStorage.getItem("nadia_shopping_cart"));
     current_cart.push({
-        quantity: selected_quantity,
+        product_name,
+        product_image,
         glazing,
         individual_price: price,
+        quantity: selected_quantity,
         total_price,
     });
     localStorage.setItem("nadia_shopping_cart", JSON.stringify(current_cart));

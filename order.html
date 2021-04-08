@@ -30,7 +30,7 @@
             <div class="main">
                 <!--First column for bun images-->
                 <div class="images-column">
-                    <img class="main-original" src="images/original1.jpg" alt="original bun picture">
+                    <img class="main-original" src="images/original1.jpg" data-src="images/original1.jpg" alt="original bun picture">
                     <div class="small-images">
                         <img class="original-small" src="images/smallorginal1.jpg" alt="another original bun picture">
                         <img class="original-small" src="images/smalloriginal2.jpg" alt="another original bun picture">
@@ -67,7 +67,7 @@
                     <h3 class="total" data-total="0.00">Total: $<span id="total-price"></span></h3>
                     <button onclick="add_to_cart();" class="add-to-cart">Add to Cart</button>
                     <div class="buy-now">
-                        <a href="cart.html" class="buy-now">Buy Now</a>
+                        <a onclick="add_to_cart();" href="cart.html" class="buy-now">Buy Now</a>
                     </div>
                 </div>
             </div>

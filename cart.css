@@ -27,11 +27,13 @@ body{
 }
 
 .cart-item {
+    position: relative;
     display: flex;
     align-items: center;
     border: #B06B29 solid 4px;
     border-radius: 16px;
     padding: 16px;
+    margin-bottom: 16px;
 }
 
 .cart-item .cart-item-image {
@@ -148,7 +150,16 @@ body{
     font-size: 36px;
 }
 
+.items-total{
+    color: #b06b29;
+    font-size: 24px;
+}
+
 .items-shipping{
+    color: #b06b29;
+    font-size: 24px;
+}
+.subtotal{
     color: #b06b29;
     font-size: 24px;
 }
@@ -161,4 +172,23 @@ body{
 .order-total{
     color: #FF0000;
     font-size: 36px;
+}
+
+.remove-button {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    border-radius: 15px;
+    border: 0;
+    background-color: #b06b29;
+    color: white;
+    transition: opacity 0.1s;
+    cursor: pointer;
+}
+
+.remove-button:hover {
+    opacity: 0.7;
 }
