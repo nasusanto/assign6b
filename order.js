@@ -38,8 +38,6 @@ function listen_glazing_change() {
             } else {
                 document.querySelector(".added-detail").innerHTML = "";
             }
-
-            // TODO: Update product image
         }
     });
 }
